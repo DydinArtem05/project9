@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="calculator__main">
+        <div class="calculator__title">Tip Calculator</div>
+        <div class="calculator__fields-block">
+            <div class="calculator__field">
+                <div class="calculator__field-title"><label for="bill">Bill Amount</label></div>
+                <button><i class="fa-solid fa-dollar-sign"></i>
+                </button><input name="bill" type="number" id="bill" class="calculator__field-input">
+            </div>
+            <div class="calculator__field">
+                <div class="calculator__field-title"><label for="guestsNumber">Number of guests</label></div>
+                <button><i class="fa-solid fa-person"></i>
+                </button><input name="guestsNumber" id="number" type="number" class="calculator__field-input">
+            </div>
+            <div class="calculator__field">
+                <div class="calculator__field-title"><label for="serviceQuality">Service quality</label></div>
+                
+                <select name="serviceQuality" id="serviceQuality">
+                    <option disabled selected value="0">Choose...</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - It was ok</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </div>
+        </div>
+        <div class="calculator__button"><button id="calculate__tip">Calculate</button></div>
+    </div>
+    <div id="tip__amount"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
